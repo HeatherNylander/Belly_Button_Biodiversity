@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background: url(https://freefrontend.com/assets/img/css-snippets-demo/001.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+p {
+  max-width: 1200px;
+  margin: auto 15%;
+  line-height: 1.1;
+  font-size: 78px;
+  font-weight: 700;
+  letter-spacing: .0125em;
+  color: #fff;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  z-index: 1;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: .07em;
+  height: .1em;
+  width: 100%;
+  background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+  z-index: -1;
+  transition: height .25s cubic-bezier(.6,0,.4,1);
+}
+
+select {
+  color: #fff;
+  text-align: center;
+}
+
+h3 {
+  color: #fff;
+  text-align: center;
+}
+
+h5 {
+  color: #fff;
+  text-align: center;
+}
+
+a:hover::after {
+  height: .2em;
+}
+
+@media (max-width: 1199px) {
+  p {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 991px) {
+  p {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 767px) {
+  p {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 575px) {
+  p {
+    font-size: 26px;
+  }
+}
